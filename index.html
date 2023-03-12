@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Sirine Cherkaoui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>User Input, with a JS file</title>
+  </head>
+  
   <body>
-  Hello world
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script src="./js/script.js"></script>
+    <h1>User Input, with a JS file</h1>
+    <p>
+      <h3>Please enter the following:</h3>
+      <form action="javascript:enterClicked()">
+        <label for="streetName">Street Name</label>
+        <input type="text" id="streetName" placeholder="Street Name"><br><br>
+        <label for="streetNumber">Street Number</label>
+        <input type="number" id="streetNumber" placeholder="Street Number"><br><br>
+        <input type="submit" value="Enter">
+      </form>
+    </p>
+		<!-- Create a space where the user information will be displayed -->
+    <div id="user-info">
+    </div>
+    
+    <center><img src="./images/house.jpg" alt="pink house" width=1500 height=500></center>
+    
   </body>
 </html>
